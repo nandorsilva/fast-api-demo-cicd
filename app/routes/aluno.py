@@ -17,7 +17,7 @@ router = APIRouter()
 
 @router.get("/")
 async def home():
-    return "Olá alunos"
+    return "Olá alunos."
 
 
 @router.get("/alunos/", response_model=List[AlunoResponse], status_code=status.HTTP_200_OK)
